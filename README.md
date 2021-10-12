@@ -1,4 +1,4 @@
-# sharpen
+# Sharpen
 
 Simple parallel image sharpening exercise for training purposes
 
@@ -21,34 +21,34 @@ written in a very naive manner so that it runs for a measurable amount
 of time. Typical timings for the serial program will be around 5
 seconds, with between 0.1 and 0.2 seconds for IO.
 
-## compilation
+## Compilation
 
 There are two version of the program:
-- serial version in C-SER
+- Serial version in C-SER
 - OpenMP parallel version in C-OMP
 
 To compile them:
-
-cd C-SER
-make
+    
+    cd C-SER 
+    make
 
 or
 
-cd C-OMP
-make
+    cd C-OMP 
+    make
 
 
 ## Running
 
 For the serial version
 
-./sharpen
+    ./sharpen 
 
 
 For the parallel OpenMP version
 
-export OMP_NUM_THREADS=4
-./sharpen
+    export OMP_NUM_THREADS=4   
+    ./sharpen  
 
 
 ## Submitting jobs to compute nodes
